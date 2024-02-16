@@ -75,6 +75,7 @@ internal class AppleMusicDiscordClient {
             var rp = new RichPresence() {
                 Details = songName,
                 State = subtitle,
+                Type =2,
                 Assets = new Assets() {
                     LargeImageKey = (showBigImage ? amInfo.CoverArtUrl : null) ?? Constants.DiscordAppleMusicImageKey,
                     LargeImageText = songAlbum
